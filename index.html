@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101722" />
+  <title>Through the Quiet — A 3D Journey</title>
+</head>
+<body>
+  <div id="game">
+    <div class="topbar">
+      <div>
+        <div class="kicker">A WORLD BETWEEN WHAT WAS AND WHAT CAN BE</div>
+        <h1>Through the Quiet</h1>
+        <p class="intro">Walk at your own pace. The landscape remembers what the character cannot yet say.</p>
+      </div>
+      <div class="status">A reflective experience <span>·</span> no timer, no wrong path</div>
+    </div>
+
+    <section class="chapter" aria-live="polite">
+      <div class="chapter-kicker" id="chapter-kicker">CHAPTER I · THE VEIL</div>
+      <h2 id="chapter-title">Denial</h2>
+      <p id="chapter-copy">The world has not disappeared. It has become difficult to look at directly.</p>
+      <div class="chapter-progress" id="chapter-progress">
+        <i class="active"></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+
+    <div class="controls">
+      <div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move</div>
+      <div><kbd>SHIFT</kbd> walk faster <span class="sep">·</span> <kbd>MOUSE</kbd> look</div>
+      <div><kbd>SPACE</kbd> pause <span class="sep">·</span> <kbd>R</kbd> restart</div>
+      <button id="restart">↺ Begin again</button>
+    </div>
+
+    <div class="center-note" id="center-note">Some things can only be approached slowly.</div>
+    <div class="crosshair"></div>
+    <div class="loading" id="loading">Preparing the world…</div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
